@@ -108,9 +108,9 @@ autocmd! bufwritepost .vimrc
 autocmd! bufwritepost .vimrc 
    \ execute '! cp .vimrc dotfiles/vimrc' |
    \ execute '! cd dotfiles; git add vimrc ; git commit -m update; git push' 
-autocmd! bufwritepost .bashrc 
-   \ execute '! cp .bashrc dotfiles/bashrc' |
-   \ execute '! cd dotfiles; git add bashrc ; git commit -m update; git push' 
+"autocmd! bufwritepost .bashrc 
+"   \ execute '! cp .bashrc dotfiles/bashrc' |
+"   \ execute '! cd dotfiles; git add bashrc ; git commit -m update; git push' 
 autocmd! bufwritepost .tmux.conf 
    \ execute '! cp .tmux.conf dotfiles/tmux.conf' |
    \ execute '! cd dotfiles; git add tmux.conf ; git commit -m update; git push' 
