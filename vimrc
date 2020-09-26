@@ -30,7 +30,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'othree/tern_for_vim_coffee',              { 'for': ['javascript', 'coffee'] }
     Plug 'othree/javascript-libraries-syntax.vim',  { 'for': ['javascript', 'coffee'] }
     Plug 'fatih/vim-go',                            { 'for': ['go'], 'do': ':GoUpdateBinaries'} 
-    Plug 'neoclide/coc.nvim',                       { 'for': ['go']} 
+    Plug 'neoclide/coc.nvim',                       { 'for': ['go'], 'do': 'yarn install --frozen-lockfile'} 
     Plug 'zchee/deoplete-go',                       { 'do': 'make'}
     Plug 'scrooloose/syntastic'
     Plug 'SirVer/ultisnips' 
