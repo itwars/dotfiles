@@ -29,7 +29,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'rstacruz/sparkup',                        { 'for': ['html', 'xhtml']}
     Plug 'othree/tern_for_vim_coffee',              { 'for': ['javascript', 'coffee'] }
     Plug 'othree/javascript-libraries-syntax.vim',  { 'for': ['javascript', 'coffee'] }
-    Plug 'fatih/vim-go',                            { 'for': ['go']} 
+    Plug 'fatih/vim-go',                            { 'for': ['go'], 'do': ':GoUpdateBinaries'} 
     Plug 'neoclide/coc.nvim',                       { 'for': ['go']} 
     Plug 'zchee/deoplete-go',                       { 'do': 'make'}
     Plug 'scrooloose/syntastic'
