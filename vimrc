@@ -328,7 +328,7 @@ map <F8> :call GoBuf()<CR>
 
 " Spell Check
 let b:myLang=0
-let g:myLangList=["nospell","fr_fr","en_us"]
+let g:myLangList=["nospell","fr","en_us"]
 function! ToggleSpell()
   let b:myLang=b:myLang+1
   if b:myLang>=len(g:myLangList) | let b:myLang=0 | endif
