@@ -1,7 +1,7 @@
 "   ┌─────────────────────────────┐
 "   │ (Neo)Vim configuration file │
 "   │   Author: Vincent RABAH     │
-"   │   Update date: 2020-09-26   │
+"   │   Update date: 2020-10-23   │
 "   └─────────────────────────────┘
 
 " ┌─────────┐
