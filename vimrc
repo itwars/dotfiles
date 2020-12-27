@@ -16,7 +16,6 @@ endif
 
 call plug#begin('~/.vim/plugged')
     Plug 'tomasr/molokai'
-    Plug 'ParamagicDev/vim-medic_chalk'
     Plug 'ervandew/supertab'
     Plug 'Raimondi/delimitMate'
     Plug 'majutsushi/tagbar'
@@ -325,5 +324,3 @@ function! GoBuf()
   endfor
 endfunction
 map <F8> :call GoBuf()<CR>
-
-autocmd BufNewFile,BufRead *.go colorscheme medic_chalk
