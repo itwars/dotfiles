@@ -75,7 +75,7 @@ let mapleader=","
 set fillchars+=vert:│
 let g:indentLine_char = '│'
 let g:indentLine_color_term = 1
-//colorscheme molokai
+"colorscheme molokai
 colorscheme dracula
 set background=dark
 set number
