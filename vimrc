@@ -76,7 +76,7 @@ set fillchars+=vert:│
 let g:indentLine_char = '│'
 let g:indentLine_color_term = 1
 "colorscheme molokai
-let g:tokyonight_style = 'night' " available: night, storm
+let g:tokyonight_style = 'storm' " available: night, storm
 colorscheme tokyonight
 set background=dark
 set number
