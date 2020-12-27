@@ -326,4 +326,4 @@ function! GoBuf()
 endfunction
 map <F8> :call GoBuf()<CR>
 
-autocmd BufNewFile,BufRead *.go colorscheme vim-medic_chalk
+autocmd BufNewFile,BufRead *.go colorscheme medic_chalk
