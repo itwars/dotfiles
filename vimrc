@@ -16,6 +16,7 @@ endif
 
 call plug#begin('~/.vim/plugged')
     Plug 'tomasr/molokai'
+    Plug 'bitfield/vim-gitgo'
     Plug 'ervandew/supertab'
     Plug 'Raimondi/delimitMate'
     Plug 'majutsushi/tagbar'
