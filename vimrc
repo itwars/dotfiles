@@ -53,6 +53,7 @@ set clipboard=unnamed " use system clipboard
 set timeout
 set timeoutlen=750
 set ttimeoutlen=250
+set autowrite
 
 "NeoVim handles ESC keys as alt+key set this to solve the problem
 if has('nvim')
