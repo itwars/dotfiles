@@ -75,9 +75,7 @@ let mapleader=","
 set fillchars+=vert:│
 let g:indentLine_char = '│'
 let g:indentLine_color_term = 1
-"colorscheme molokai
-let g:tokyonight_style = 'storm' " available: night, storm
-colorscheme tokyonight
+colorscheme molokai
 set background=dark
 set number
 set backspace=2 " make backspace work like most other apps
