@@ -16,6 +16,7 @@ endif
 
 call plug#begin('~/.vim/plugged')
     Plug 'tomasr/molokai'
+    Plug 'ghifarit53/tokyonight-vim'
     Plug 'ervandew/supertab'
     Plug 'Raimondi/delimitMate'
     Plug 'majutsushi/tagbar'
@@ -105,14 +106,14 @@ set pastetoggle=<F2>
 autocmd! bufwritepost .vimrc 
    \ source ~/.vimrc 
 autocmd! bufwritepost .vimrc 
-   \ execute '! cp .vimrc dotfiles/vimrc' |
-   \ execute '! cd dotfiles; git add vimrc ; git commit -m update; git push' 
+   \ execute '! cp .vimrc ~/dotfiles/vimrc' |
+   \ execute '! cd ~/dotfiles; git add vimrc ; git commit -m update; git push' 
 "autocmd! bufwritepost .bashrc 
 "   \ execute '! cp .bashrc dotfiles/bashrc' |
 "   \ execute '! cd dotfiles; git add bashrc ; git commit -m update; git push' 
 autocmd! bufwritepost .tmux.conf 
-   \ execute '! cp .tmux.conf dotfiles/tmux.conf' |
-   \ execute '! cd dotfiles; git add tmux.conf ; git commit -m update; git push' 
+   \ execute '! cp .tmux.conf ~/dotfiles/tmux.conf' |
+   \ execute '! cd ~/dotfiles; git add tmux.conf ; git commit -m update; git push' 
 " Markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
@@ -131,6 +132,7 @@ command! Xindent norm! ggVG='.
 "└─────────────┘
 au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml foldmethod=indent
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+set foldlevelstart=20
 
 " ┌─────────────────────────────────────────┐
 " │ Enable omni completion. (Ctrl-X Ctrl-O) │
