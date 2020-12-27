@@ -324,3 +324,5 @@ function! GoBuf()
   endfor
 endfunction
 map <F8> :call GoBuf()<CR>
+
+autocmd BufNewFile,BufRead *.go colorscheme gitgo
