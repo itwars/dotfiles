@@ -62,7 +62,7 @@ if has('nvim')
    set matchtime=0
 endif
 
-syntax on
+syntax enable
 set synmaxcol=128       " disable syntax on large line
 set t_ut=               " fuckin 256colors zones in tmux !!!
 set expandtab        	" replace <TAB> with spaces
