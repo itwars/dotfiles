@@ -326,4 +326,4 @@ function! GoBuf()
 endfunction
 map <F8> :call GoBuf()<CR>
 
-autocmd BufNewFile,BufRead *.go colorscheme gitgo
+autocmd BufNewFile,BufRead *.go colorscheme gruvbox
