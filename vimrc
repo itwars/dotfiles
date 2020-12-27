@@ -325,7 +325,7 @@ function! GoBuf()
 endfunction
 map <F8> :call GoBuf()<CR>
 
-“ Go syntax highlighting
+"Go syntax highlighting
 let g:go_highlight_fields = 1
 let g:go_highlight_functions = 1
 let g:go_highlight_function_calls = 1
