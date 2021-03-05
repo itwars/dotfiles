@@ -30,6 +30,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'othree/tern_for_vim_coffee',              { 'for': ['javascript', 'coffee'] }
     Plug 'othree/javascript-libraries-syntax.vim',  { 'for': ['javascript', 'coffee'] }
     Plug 'fatih/vim-go',                            { 'for': ['go'], 'do': ':GoUpdateBinaries'} 
+    Plug 'sebdah/vim-delve'                         { 'for': 'go'} 
     Plug 'zchee/deoplete-go',                       { 'do': 'make'}
     Plug 'SirVer/ultisnips' 
     Plug 'honza/vim-snippets'
