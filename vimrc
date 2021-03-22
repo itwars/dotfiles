@@ -106,7 +106,8 @@ autocmd! bufwritepost .vimrc
    \ source ~/.vimrc 
 autocmd! bufwritepost .vimrc 
    \ execute '! cp .vimrc ~/dotfiles/vimrc' |
-   \ execute '! cd ~/dotfiles; git add vimrc ; git commit -m update; git push' 
+   \ execute '! cd ~/dotfiles; git add vimrc ; git commit -m update; git push' |
+   \ source ~/.vimrc 
 "autocmd! bufwritepost .bashrc 
 "   \ execute '! cp .bashrc dotfiles/bashrc' |
 "   \ execute '! cd dotfiles; git add bashrc ; git commit -m update; git push' 
