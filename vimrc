@@ -99,9 +99,9 @@ nmap <leader>p :set paste!<BAR>set paste?<CR> " ,p toggles paste mode
 map <C-n> :NERDTreeToggle<CR>
 map <C-t> :TagbarToggle<CR>
 set pastetoggle=<F2>
-"┌──────────────────────────────────────────────────────┐
-"│   Auto reload vimrc + push to github when editing it │
-"└──────────────────────────────────────────────────────┘
+"┌────────────────────────────────────────────────────┐
+"│ Auto reload vimrc + push to github when editing it │
+"└────────────────────────────────────────────────────┘
 autocmd! bufwritepost .vimrc 
    \ execute '! cp .vimrc ~/dotfiles/vimrc' |
    \ execute '! cd ~/dotfiles; git add vimrc ; git commit -m update; git push' |
