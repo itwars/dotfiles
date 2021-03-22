@@ -35,6 +35,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'ryanoasis/vim-devicons'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
+    Plug 'nvim-lua/popup.nvim'
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim'
 call plug#end()
 
 " ┌────────────────┐
@@ -107,7 +110,6 @@ autocmd! bufwritepost .vimrc
 autocmd! bufwritepost .vimrc 
    \ execute '! cp .vimrc ~/dotfiles/vimrc' |
    \ execute '! cd ~/dotfiles; git add vimrc ; git commit -m update; git push' 
-   \ source ~/.vimrc 
 "autocmd! bufwritepost .bashrc 
 "   \ execute '! cp .bashrc dotfiles/bashrc' |
 "   \ execute '! cd dotfiles; git add bashrc ; git commit -m update; git push' 
