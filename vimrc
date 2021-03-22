@@ -37,7 +37,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'ryanoasis/vim-devicons'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
-    Plug 'conweller/findr.vim'
 call plug#end()
 
 " ┌────────────────┐
