@@ -1,0 +1,31 @@
+live_config_reload = true
+[env]
+TERM = "xterm-256color"
+[font]
+size = 20
+[font.normal]
+family = "AnonymicePro Nerd Font Mono"
+style = "Regular"
+[shell]
+program = "/usr/local/bin/tmux"
+[window]
+decorations = "Full"
+startup_mode = "Maximized" 
+[window.dimensions]
+columns = 160
+lines = 95
+[window.padding]
+x = 2
+y = 2
+[terminal]
+osc52 = "CopyPaste"
+[selection]
+save_to_clipboard=true
+[[hints.enabled]]
+command = "open" # On macOS
+hyperlinks = true
+post_processing = true
+persist = false
+mouse.enabled = true
+binding = { key = "U", mods = "Control|Shift" }
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
