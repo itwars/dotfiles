@@ -481,7 +481,7 @@ vim.api.nvim_create_autocmd("BufWritePost", {
     vim.cmd('! cp ~/.vimrc ~/dotfiles/.vimrc')
     test = vim.cmd('! cd ~/dotfiles; git add .vimrc; git commit -m update; git push')
     notify('File .vimrc push to git repository !',  notify.INFO, {title="Autocmd .vimrc"}) 
-    notify($test,  notify.INFO, {title="Autocmd .vimrc"}) 
+    notify(test,  notify.INFO, {title="Autocmd .vimrc"}) 
   end,
   desc = "Github backup of .vimrc.",
 })
