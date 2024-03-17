@@ -478,8 +478,8 @@ vim.api.nvim_create_user_command('Xindent',"norm! ggVG='.'",{bang = true})
 vim.api.nvim_create_autocmd("BufWritePost", {
   pattern = ".vimrc",
   callback = function(args)
-    vim.cmd('silent! cp ~/.vimrc ~/dotfiles/.vimrc')
-    vim.cmd('silent! cd ~/dotfiles; git add .vimrc; git commit -m update; git push')
+    vim.cmd('! cp ~/.vimrc ~/dotfiles/.vimrc')
+    vim.cmd('! cd ~/dotfiles; git add .vimrc; git commit -m update; git push')
     notify('File .vimrc push to git repository !',  notify.INFO, {title="Autocmd .vimrc"}) 
   end,
   desc = "Github backup of .vimrc.",
