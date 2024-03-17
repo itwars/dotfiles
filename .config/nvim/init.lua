@@ -486,8 +486,9 @@ vim.api.nvim_create_autocmd("BufWritePost", {
 vim.api.nvim_create_autocmd("BufWritePost", {
   pattern = "init.lua",
   callback = function(args)
-    vim.cmd('! cp ~/.config/nvim/init.lua ~/dotfiles/.config/nvim/init.lua ; sleep 20')
-    vim.cmd('! cd ~/dotfiles; git add .config/nvim/init.lua; git commit -m update; git push ; sleep 20')
+    -- add ", sleep 20" at the end of vim.cmd lines for debugging
+    vim.cmd('! cp ~/.config/nvim/init.lua ~/dotfiles/.config/nvim/init.lua')
+    vim.cmd('! cd ~/dotfiles; git add .config/nvim/init.lua; git commit -m update; git push')
     notify('File init.lua push to git repository !',  notify.INFO, {title="Autocmd init.lua"})
   end,
   desc = "Github backup of init.lua.",
