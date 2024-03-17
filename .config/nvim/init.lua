@@ -474,6 +474,7 @@ vim.api.nvim_create_user_command('Xindent',"norm! ggVG='.'",{bang = true})
 --┌───────────────┐
 --│ Auto Commands │
 --└───────────────┘
+-- add ", sleep 20" at the end of vim.cmd lines for debugging
 vim.api.nvim_create_autocmd("BufWritePost", {
   pattern = ".vimrc",
   callback = function(args)
@@ -486,7 +487,6 @@ vim.api.nvim_create_autocmd("BufWritePost", {
 vim.api.nvim_create_autocmd("BufWritePost", {
   pattern = "init.lua",
   callback = function(args)
-    -- add ", sleep 20" at the end of vim.cmd lines for debugging
     vim.cmd('! cp ~/.config/nvim/init.lua ~/dotfiles/.config/nvim/init.lua')
     vim.cmd('! cd ~/dotfiles; git add .config/nvim/init.lua; git commit -m update; git push')
     notify('File init.lua push to git repository !',  notify.INFO, {title="Autocmd init.lua"})
