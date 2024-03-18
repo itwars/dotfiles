@@ -497,6 +497,7 @@ vim.api.nvim_create_autocmd("BufWritePost", {
     notify('File .vimrc push to git repository !',  notify.INFO, {title="Autocmd .vimrc"}) 
   end,
   desc = "Github backup of .vimrc.",
+  group = autocmd_group,
 })
 vim.api.nvim_create_autocmd("BufWritePost", {
   pattern = "init.lua",
@@ -506,6 +507,7 @@ vim.api.nvim_create_autocmd("BufWritePost", {
     notify('File init.lua push to git repository !',  notify.INFO, {title="Autocmd init.lua"})
   end,
   desc = "Github backup of init.lua.",
+  group = autocmd_group,
 })
 vim.api.nvim_create_autocmd("BufWritePost", {
   pattern = ".tmux.conf",
@@ -516,6 +518,7 @@ vim.api.nvim_create_autocmd("BufWritePost", {
     notify('File .tmux.conf push to git repository !',  notify.INFO, {title="Autocmd .tmux.conf"})
   end,
   desc = "Github backup of .tmux.conf.",
+  group = autocmd_group,
 })
 vim.api.nvim_create_autocmd("BufWritePost", {
   pattern = ".bashrc",
@@ -534,6 +537,7 @@ vim.api.nvim_create_autocmd("BufWritePost", {
     notify('File .bashrc files push to git repository !',  notify.INFO, {title="Autocmd .bashrc files"})
   end,
   desc = "Github backup of .bashrc.",
+  group = autocmd_group,
 })
 
 --┌──────────────────────────────────┐
