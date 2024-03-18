@@ -277,7 +277,7 @@ vim.keymap.set('n', '<leader>b', ':Neotree buffers reveal float<CR>', {silent = 
 --└─────┘
 require('mason').setup({ ui = { border = "rounded" },})
 require('mason-lspconfig').setup({
-  ensure_installed = { "lua_ls" }, -- Need to install language on the OS
+  ensure_installed = { "lua_ls", "golines" }, -- Need to install language on the OS
   auto_install = true,
 })
 local capacities = require('cmp_nvim_lsp').default_capabilities()
@@ -291,11 +291,6 @@ vim.keymap.set({'n','v'},"<leader>a",vim.lsp.buf.code_action, {})
 local null_ls = require('null-ls')
 null_ls.setup({
   sources = {
-    null_ls.builtins.formatters.setup = {
-      name = "golines",
-      args = { "--max-len", "80" },
-      filetypes = { "go" }
-    },
     null_ls.builtins.formatting.stylua,
     null_ls.builtins.formatting.golines,
     null_ls.builtins.completion.spell,
