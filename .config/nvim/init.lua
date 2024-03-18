@@ -291,6 +291,7 @@ vim.keymap.set({'n','v'},"<leader>a",vim.lsp.buf.code_action, {})
 local null_ls = require('null-ls')
 null_ls.setup({
   sources = {
+    builtins.formatting.stylua,
     null_ls.builtins.formatting.stylua,
     null_ls.builtins.formatting.golines,
     null_ls.builtins.completion.spell,
