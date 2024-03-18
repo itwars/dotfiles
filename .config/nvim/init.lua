@@ -540,6 +540,16 @@ vim.api.nvim_create_autocmd("BufWritePost", {
   group = autocmd_group,
 })
 
+vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+    pattern = { "*.go },
+    desc = "Auto-format golang files after saving",
+    callback = function()
+        local fileName = vim.api.nvim_buf_get_name(0)
+        vim.cmd(":!gofmt " .. fileName)
+    end,
+    group = autocmd_group,
+})
+
 --┌──────────────────────────────────┐
 --│ Colorize current line and column │
 --└──────────────────────────────────┘
