@@ -295,7 +295,7 @@ null_ls.setup({
       name = "golines",
       args = { "--max-len", "80" },
       filetypes = { "go" }
-    }
+    },
     null_ls.builtins.formatting.stylua,
     null_ls.builtins.formatting.golines,
     null_ls.builtins.completion.spell,
