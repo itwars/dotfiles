@@ -277,7 +277,7 @@ vim.keymap.set('n', '<leader>b', ':Neotree buffers reveal float<CR>', {silent = 
 --└─────┘
 require('mason').setup({ ui = { border = "rounded" },})
 require('mason-lspconfig').setup({
-  ensure_installed = { "lua_ls", "golines" }, -- Need to install language on the OS
+  ensure_installed = { "lua_ls" }, -- Need to install language on the OS
   auto_install = true,
 })
 local capacities = require('cmp_nvim_lsp').default_capabilities()
@@ -487,6 +487,8 @@ vim.api.nvim_create_user_command('Xindent',"norm! ggVG='.'",{bang = true})
 --│ Auto Commands │
 --└───────────────┘
 -- add ", sleep 20" at the end of vim.cmd lines for debugging
+local autocmd_group = vim.api.nvim_create_augroup("Custom auto-commands", { clear = true })
+
 vim.api.nvim_create_autocmd("BufWritePost", {
   pattern = ".vimrc",
   callback = function(args)
