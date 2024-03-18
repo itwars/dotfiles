@@ -294,7 +294,7 @@ null_ls.setup({
     null_ls.builtins.formatting.stylua,
     null_ls.builtins.formatting.golines,
     null_ls.builtins.completion.spell,
-    formatting.prettierd.with({
+    null_ls.builtins.formatting.prettierd.with({
 			filetypes = {
 				"css",
 				"scss",
