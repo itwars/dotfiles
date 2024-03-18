@@ -277,7 +277,7 @@ vim.keymap.set('n', '<leader>b', ':Neotree buffers reveal float<CR>', {silent = 
 --└─────┘
 require('mason').setup({ ui = { border = "rounded" },})
 require('mason-lspconfig').setup({
-  ensure_installed = { "lua_ls" }, -- Need to install language on the OS
+  ensure_installed = { "lua_ls","gopls" }, -- Need to install language on the OS
   auto_install = true,
 })
 local capacities = require('cmp_nvim_lsp').default_capabilities()
