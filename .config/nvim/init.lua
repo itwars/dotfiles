@@ -116,7 +116,7 @@ local opts = {
   },
   install = {
     --colorscheme = { "fluoromachine" },
-    colorscheme = { "tokyonight" },
+    colorscheme = { "tokyonight-moon" },
   },
   performance = {
     cache = {
