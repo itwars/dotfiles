@@ -107,7 +107,7 @@ local plugins = {
   { 'numToStr/FTerm.nvim' },                                                                                                            -- Terminal
   { 'emmanueltouzery/key-menu.nvim' },                                                                                                  -- Menu for key binding remaiders 
   { 'NvChad/nvim-colorizer.lua' },                                                                                                      -- RGB colorized in code
-  { 'maxmx03/fluoromachine.nvim', lazy = false, priority = 1000, },                                                                     -- Colorsheme
+--  { 'maxmx03/fluoromachine.nvim', lazy = false, priority = 1000, },                                                                     -- Colorsheme
   { 'folke/tokyonight.nvim', lazy = false, priority = 1000, },
 }
 local opts = {
