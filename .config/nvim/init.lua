@@ -239,16 +239,16 @@ config.setup({ensure_installed = { "bash", "lua", "html", "css"}, highlight = { 
 --┌────────────┐
 --│ Colorsheme │
 --└────────────┘
-require("fluoromachine").setup({
+require("tokyonight").setup({
   glow = false,
-  theme = "fluoromachine",
+  theme = "tokyonight-moon",
   option = {
     transparent = true, -- Enable/Disable transparency
     bold = true,
     italic = true,
   },
 })
-vim.cmd.colorscheme("fluoromachine")
+vim.cmd.colorscheme("tokyonight-moon")
 
 --┌─────────┐
 --│ NeoTree │
