@@ -115,7 +115,8 @@ local opts = {
     border = "rounded",
   },
   install = {
-    colorscheme = { "fluoromachine" },
+    --colorscheme = { "fluoromachine" },
+    colorscheme = { "tokyonight" },
   },
   performance = {
     cache = {
