@@ -109,6 +109,7 @@ local plugins = {
   { 'NvChad/nvim-colorizer.lua' },                                                                                                      -- RGB colorized in code
   { 'maxmx03/fluoromachine.nvim', lazy = false, priority = 1000, },                                                                     -- Colorsheme
   { 'folke/tokyonight.nvim', lazy = false, priority = 1000, },
+  { 'rose-pine/neovim', lazy = false, priority =1000, },
 }
 local opts = {
   ui = {
