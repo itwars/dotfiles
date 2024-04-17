@@ -240,16 +240,16 @@ config.setup({ensure_installed = { "bash", "lua", "html", "css"}, highlight = { 
 --┌────────────┐
 --│ Colorsheme │
 --└────────────┘
-require("rose-pine").setup({
+require("tokyonight").setup({
   glow = false,
-  theme = "rose-pine",
+  theme = "tokyonight-moon",
   option = {
     transparent = true, -- Enable/Disable transparency
     bold = true,
     italic = true,
   },
 })
-vim.cmd.colorscheme("rose-pine")
+vim.cmd.colorscheme("tokyonight-moon")
 
 --┌─────────┐
 --│ NeoTree │
