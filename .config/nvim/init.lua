@@ -450,6 +450,10 @@ require 'key-menu'.set('n', '<leader>')
 --└───────────────┘
 require 'colorizer'.setup()
 
+--┌────────────────────────────┐
+--│ Colorful window separators │
+--└────────────────────────────┘
+
 --┌────────────────────────────────────────────────────────┐
 --│ Function to draw box around text when pressing <F4> key│
 --└────────────────────────────────────────────────────────┘
