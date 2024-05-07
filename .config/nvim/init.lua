@@ -237,6 +237,30 @@ vim.keymap.set('n', '<leader>g', builtin.live_grep,  {silent = true, noremap = t
 local config = require('nvim-treesitter.configs')
 config.setup({ensure_installed = { "bash", "lua", "html", "css"}, highlight = { enable = true}, indent = { enable = true} })
 
+--┌─────────┐
+--│ NeoTree │
+--└─────────┘
+require('neo-tree').setup({         -- Toggle hidden files 'H'
+  close_if_last_window = true,
+  filesystem = {
+    follow_current_file = {
+      enabled = true,
+      leave_dirs_open = true,
+    },
+    filtered_items = {
+      visible = true, -- when true, they will just be displayed differently than normal items
+      show_hidden_count = true,
+      hide_dotfiles = false,
+      hide_gitignore = false,
+    },
+    follow_current_file = {
+      enable = true,
+    }
+  }
+}) 
+vim.keymap.set('n', '<C-n>', ':Neotree filesystem toggle left<CR>',   {silent = true, noremap = true, desc = 'Neotree file explorer'  })
+vim.keymap.set('n', '<leader>b', ':Neotree buffers reveal float<CR>', {silent = true, noremap = true, desc = 'Neotree buffers display'})
+
 --┌────────────┐
 --│ Colorsheme │
 --└────────────┘
@@ -424,30 +448,6 @@ require 'key-menu'.set('n', '<leader>')
 --│ Colorizer RGB │
 --└───────────────┘
 require 'colorizer'.setup()
-
---┌─────────┐
---│ NeoTree │
---└─────────┘
-require('neo-tree').setup({         -- Toggle hidden files 'H'
-  close_if_last_window = true,
-  filesystem = {
-    follow_current_file = {
-      enabled = true,
-      leave_dirs_open = true,
-    },
-    filtered_items = {
-      visible = true, -- when true, they will just be displayed differently than normal items
-      show_hidden_count = true,
-      hide_dotfiles = false,
-      hide_gitignore = false,
-    },
-    follow_current_file = {
-      enable = true,
-    }
-  }
-}) 
-vim.keymap.set('n', '<C-n>', ':Neotree filesystem toggle left<CR>',   {silent = true, noremap = true, desc = 'Neotree file explorer'  })
-vim.keymap.set('n', '<leader>b', ':Neotree buffers reveal float<CR>', {silent = true, noremap = true, desc = 'Neotree buffers display'})
 
 --┌────────────────────────────────────────────────────────┐
 --│ Function to draw box around text when pressing <F4> key│
