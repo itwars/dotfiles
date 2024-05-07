@@ -244,7 +244,6 @@ require("tokyonight").setup({
   glow = false,
   theme = "tokyonight-moon",
   option = {
-    bright_border = true ,
     transparent = true, -- Enable/Disable transparency
     bold = true,
     italic = true,
