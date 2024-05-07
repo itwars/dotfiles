@@ -110,7 +110,6 @@ local plugins = {
   { 'maxmx03/fluoromachine.nvim', lazy = false, priority = 1000, },                                                                     -- Colorsheme
   { 'folke/tokyonight.nvim', lazy = false, priority = 1000, },
   { 'rose-pine/neovim', lazy = false, priority =1000, },
-  { 'nvim-zh/colorful-winsep.nvim', config = true, event = {"WinNew"} },                                                                                                   -- Colored frame around active window
 }
 local opts = {
   ui = {
