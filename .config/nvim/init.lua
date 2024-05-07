@@ -558,3 +558,4 @@ vim.api.nvim_create_autocmd({ "BufWritePost" }, {
 --└──────────────────────────────────┘
 vim.cmd('highlight CursorColumn guibg=#530391')
 vim.cmd('highlight CursorLine   guibg=#530391')
+vim.cmd('highlight WinSeparator guifg=orange' )
