@@ -374,7 +374,7 @@ require("autoclose").setup()
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    theme = 'retrowave',    -- According to the main theme (fluoromachine provide 3 themes: delta, retrowave, fluoromachine)
+    theme = 'delta',    -- According to the main theme (fluoromachine provide 3 themes: delta, retrowave, fluoromachine)
     component_separators = { left = '', right = ''},
     section_separators = { left = '', right = ''},
     disabled_filetypes = {
