@@ -456,8 +456,8 @@ require 'colorizer'.setup()
 require("colorful-winsep").setup({
   -- highlight for Window separator
   hi = {
-    bg = "red",
-    fg = "orange",
+    bg = "#red",
+    fg = "#orange",
   },
   -- This plugin will not be activated for filetype in the following table.
   no_exec_files = { "packer", "TelescopePrompt", "mason", "CompetiTest", "NvimTree" },
