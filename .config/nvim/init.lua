@@ -89,7 +89,7 @@ local plugins = {
   { 'nvim-telescope/telescope-media-files.nvim' },                                                                                      -- Display images
   { 'nvim-telescope/telescope-ui-select.nvim' },                                                                                        -- UI for lsp
   { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },                                                                           -- Syntax Highlight: Need to install build-base on the OS
-  { 'nvim-neo-tree/neo-tree.nvim', dependencies = { 'nvim-lua/plenary.nvim', 'nvim-tree/nvim-web-devicons', 'MunifTanjim/nui.nvim', '3rd/image.nvim', }},   -- File Browser
+  { 'nvim-neo-tree/neo-tree.nvim', dependencies = { 'nvim-lua/plenary.nvim', 'nvim-tree/nvim-web-devicons', 'MunifTanjim/nui.nvim'}},   -- File Browser
   { 'williamboman/mason.nvim' },                                                                                                        -- Install/Manage Language Servers
   { 'williamboman/mason-lspconfig.nvim' },                                                                                              -- Need to install unzip on the OS
   { 'neovim/nvim-lspconfig' },                                                                                                          -- Link Neovim/Language Servers
