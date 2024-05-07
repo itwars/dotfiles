@@ -307,6 +307,7 @@ null_ls.setup({
 				"yaml",
 				"markdown",
 				"graphql",
+        "bash",
 			},
 		}),
   }
