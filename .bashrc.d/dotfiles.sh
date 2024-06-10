@@ -1,1 +1,1 @@
-. /usr/local/etc/profile.d/z.sh
+#. /usr/local/etc/profile.d/z.sh
