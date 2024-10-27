@@ -1,13 +1,13 @@
 * {
   border: none;
-  border-radius: 0;
+  border-radius: 20;
   min-height: 0;
   font-family: AnonymicePro Nerd Font Mono;
-  font-size: 43px;
+  font-size: 23px;
 }
 
 window#waybar {
-  background-color: #181825;
+  background-color: transparent;
   transition-property: background-color;
   transition-duration: 0.5s;
 }
@@ -29,7 +29,7 @@ window#waybar.hidden {
   /* Use box-shadow instead of border so the text isn't offset */
   padding: 6px 18px;
   margin: 6px 3px;
-  border-radius: 4px;
+  border-radius: 24px;
   background-color: #1e1e2e;
   color: #cdd6f4;
 }
@@ -43,7 +43,7 @@ window#waybar.hidden {
   box-shadow: inherit;
   text-shadow: inherit;
   color: #1e1e2e;
-  background-color: #cdd6f4;
+  background-color: transparent;
 }
 
 #workspaces button.urgent {
@@ -58,11 +58,13 @@ window#waybar.hidden {
 #network,
 #clock,
 #tray {
-  border-radius: 4px;
+  border-radius: 24px;
   margin: 6px 3px;
   padding: 6px 12px;
-  background-color: #1e1e2e;
+  background-color: transparent;
   color: #181825;
+  /*box-shadow: 2px 2px 1px 1px #f0f0f0;*/
+  box-shadow: 0 4px 8px 0 rgba(0.1, 0.1, 0.1, 0.2), 0 6px 20px 0 rgba(0.1, 0.1, 0.1, 0.19);
 }
 
 #custom-power {
@@ -130,4 +132,12 @@ tooltip {
 tooltip label {
   padding: 5px;
   background-color: #131822;
+}
+
+#custom-ff {
+ background-position: right;
+  background-repeat: no-repeat;
+  background-size: 32px;
+    min-width: 30px;
+background-image: url('/home/vrabah/icons/fff.svg');
 }

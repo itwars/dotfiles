@@ -1,8 +1,8 @@
-{
+[{
     "layer": "top",
     "position": "top",
     "spacing": 0,
-    "height": 55,
+    "height": 35,
     "modules-left": [
         "custom/logo",
         "hyprland/workspaces"
@@ -137,4 +137,20 @@
         "tooltip": false,
         "on-click": "~/.config/rofi/powermenu/type-2/powermenu.sh &"
     }
-}
+},
+{
+    "layer": "top",
+    "position": "right",
+    "spacing": 0,
+    "height": 35,
+    "modules-center": ["clock","custom/ff"],
+    "clock": {
+        "tooltip-format": "{calendar}",
+        "format-alt": "  {:%a, %d %b %Y}",
+        "format": "  {:%I:%M %p}"
+    },
+    "custom/ff": {
+        "format": "    {}",
+         "on-click": "/usr/bin/firefox"
+    }
+}]
