@@ -1,8 +1,8 @@
----@diagnostic disable: unused-local
+--@diagnostic disable: unused-local
 -- ┌─────────────────────────────┐
 -- │  NeoVim configuration file  │
 -- │   Author: Vincent RABAH     │
--- │   Update date: 2024-05-07   │
+-- │   Update date: 2025-08-25   │
 -- └─────────────────────────────┘
 
 --┌─────────────────────────────────────────────────────┐
@@ -19,7 +19,7 @@
 --│     . [X] Lualine: statusline                       │
 --│     . [X] Neoview: keep track of cursor position    │
 --│     . [X] Notify: nice notification widgets         │
---│     . [X] FTerm: terminal management                │
+--│     . [X] ToggleTerm: terminal management           │
 --│     . [ ] Key menu: key binding reminder            │
 --│     . [X] Colorizer: RGB colorized in code          │
 --│     . [X] Fluoromachine: colorscheme                │
@@ -104,7 +104,7 @@ local plugins = {
   { 'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' } },                                                    -- Status Line
   { 'ecthelionvi/NeoView.nvim' },                                                                                                       -- Keep track of cursor position
   { 'rcarriga/nvim-notify' },                                                                                                           -- Notification popups
-  { 'numToStr/FTerm.nvim' },                                                                                                            -- Terminal
+  { 'akinsho/toggleterm.nvim' },                                                                                                        -- Terminal
   { 'emmanueltouzery/key-menu.nvim' },                                                                                                  -- Menu for key binding remaiders 
   { 'NvChad/nvim-colorizer.lua' },                                                                                                      -- RGB colorized in code
   { 'maxmx03/fluoromachine.nvim', lazy = false, priority = 1000, },                                                                     -- Colorsheme
@@ -424,20 +424,20 @@ notify.setup()
 --└─────────┘
 require("NeoView").setup()
 
---┌───────┐
---│ FTerm │
---└───────┘
-local fterm = require("FTerm")
-fterm.setup({
-  border = 'rounded',
-  dimensions  = {
-    height = 0.8,
-    width = 0.8,
-  },
+--┌────────────┐
+--│ ToggleTerm │
+--└────────────┘
+local toggleterm = require("toggleterm")
+require('toggleterm').setup({
+  shade_terminals = false,
+  start_in_insert = true,
+  persist_mode = false,
+  float_opts = {
+    border = 'curved'
+  }
 })
-local btop = fterm:new({ft = 'fterm_btop',cmd = "btop"})
-vim.keymap.set('n', '<leader>p', function() btop:toggle() end, {silent = true, noremap = true, desc = "Open btop" })
-vim.keymap.set('n', '<leader>t', '<CMD>lua require("FTerm").toggle()<CR>', {silent = true, noremap = true, desc = "Open terminal" })
+vim.keymap.set('n', '<leader>t', ':ToggleTerm direction=float<CR>', {desc ='Open terminal'})
+-- vim.keymap.set('n', '<leader>t', '<CMD>lua require("FTerm").toggle()<CR>', {silent = true, noremap = true, desc = "Open terminal" })
 
 --┌──────────┐
 --│ Menu-key │
@@ -560,4 +560,3 @@ vim.api.nvim_create_autocmd({ "BufWritePost" }, {
 vim.cmd('highlight CursorColumn guibg=#530391')
 vim.cmd('highlight CursorLine   guibg=#530391')
 vim.cmd('highlight WinSeparator guifg=orange' )
-
