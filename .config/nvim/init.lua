@@ -58,7 +58,7 @@ set cursorcolumn
 set background=dark
 set nowrap
 set number
-set autochdir           " important to have the correct directory in Terminal
+" set autochdir           " important to have the correct directory in Terminal
 set noshowmode          " don't show 'INSERT', 'REPLACE', ... as statusline plugin already does
 set clipboard+=unnamedplus
 ]], false)
