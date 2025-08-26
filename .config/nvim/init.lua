@@ -285,7 +285,7 @@ require('mason-lspconfig').setup({
 })
 local capacities = require('cmp_nvim_lsp').default_capabilities()
 local lspconfig = require('lspconfig')
-lspconfig.tsserver.setup({ capacities = capacities })
+lspconfig.ts_ls.setup({ capacities = capacities })
 vim.keymap.set("n","K",vim.lsp.buf.hover, {})
 vim.keymap.set({'n','v'},"<leader>a",vim.lsp.buf.code_action, {})
 --┌─────────┐
