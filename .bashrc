@@ -1,7 +1,10 @@
 #!/usr/bin/env bash 
 
-# If not running interactively, don't do anything
-case $- in
-	*i*) ;;
-	  *) return;;
-esac
+# User specific aliases and functions
+if [ -d ~/.bashrc.d ]; then
+    for rc in ~/.bashrc.d/*; do
+        if [ -f "$rc" ]; then
+            . "$rc"
+        fi
+    done
+fi
